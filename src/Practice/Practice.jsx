@@ -524,18 +524,41 @@
 
 // export default Practice;
 
-import React from "react";
+// import React from "react";
 
-export function ChildComponent({ name, age, gender }) {
+// export function ChildComponent({ name, age, gender }) {
+//   return (
+//     <div>
+//       <p>{name}</p>
+//       <p>{age}</p>
+//       <p>{gender}</p>
+//     </div>
+//   );
+// }
+
+// export function ParentComponent() {
+//   <ChildComponent name="Sahil" age="25" gender="Male" />;
+// }
+
+import React, { useState } from "react";
+
+function Practice() {
+  const [count, setCount] = useState(0);
+  function increment() {
+    setCount(count + 1);
+  }
+  function Decrement() {
+    setCount(count - 1);
+  }
+
   return (
     <div>
-      <p>{name}</p>
-      <p>{age}</p>
-      <p>{gender}</p>
+      <h1>Counter Page </h1>
+      <h1>{count}</h1>
+      <button onClick={increment}>Increment</button>
+      <button onClick={Decrement}>Decrement</button>
     </div>
   );
 }
 
-export function ParentComponent() {
-  <ChildComponent name="Sahil" age="25" gender="Male" />;
-}
+export default Practice;

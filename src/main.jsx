@@ -35,8 +35,8 @@ import App2 from "./usecallback/App2";
 // import App from "./TextArea/App.jsx";
 // import App from "./ComponentRouting/App";
 // import { BrowserRouter } from "react-router-dom";
-// import Practice from "./Practice/Practice";
-import { ParentComponent } from "./Practice/Practice";
+import Practice from "./Practice/Practice";
+// import { ParentComponent } from "./Practice/Practice";
 // import App from "./usecallback/App";
 // import App from "./useRef/App";
 // import App from "./form_exercise/components/App";
@@ -78,8 +78,8 @@ createRoot(document.getElementById("root")).render(
   // <App />
   // <App />
 
-  // <Practice />
-  <ParentComponent />
+  <Practice />
+  // <ParentComponent />
   // <Context>
   //   <BrowserRouter>
   //     <App />
